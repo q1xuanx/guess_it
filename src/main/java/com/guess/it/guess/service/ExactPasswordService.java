@@ -1,10 +1,13 @@
 package com.guess.it.guess.service;
 
+import com.guess.it.core.dto.ApiResponse;
+import com.guess.it.core.utils.DateHandle;
 import com.guess.it.guess.model.ExactPassword;
+import com.guess.it.guess.model.WrongGuess;
 import com.guess.it.guess.repository.ExactPasswordRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.springframework.cglib.core.Local;
+import org.springframework.data.util.Pair;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -16,14 +19,32 @@ import java.util.Random;
 @RequiredArgsConstructor
 public class ExactPasswordService {
     private final ExactPasswordRepository exactPasswordRepository;
+    private final WrongGuessService wrongGuessService;
     private char[] specialCharacters = new char[]{'!', '@', '#', '$', '%', '^', '&', '*'};
+
+    public ApiResponse<Boolean> guessPassword(String password) {
+        Pair<LocalDateTime, LocalDateTime> getEndAndStart = DateHandle.getStartAndEndDate();
+        ExactPassword exactPassword = exactPasswordRepository.findByTimeGenerated(getEndAndStart.getFirst(), getEndAndStart.getSecond());
+        if (exactPassword == null || exactPassword.isGuessed()) {
+            return new ApiResponse<>(400, "Error when generate password, please try again ! \n Or password is guessed today, please try tomorrow", false);
+        }
+        if (exactPassword.getPassword().equals(password)) {
+            exactPassword.setGuessed(true);
+            exactPasswordRepository.save(exactPassword);
+            return new ApiResponse<>(200, "Successfully ! your guess is correct", true);
+        }
+        WrongGuess wrongGuess = WrongGuess.builder()
+                .guess(password)
+                .timeGuess(LocalDateTime.now())
+                .build();
+        wrongGuessService.save(wrongGuess);
+        return new ApiResponse<>(400, "Password not correct", false);
+    }
 
     @Transactional
     public boolean savePassword(){
-        LocalDate currentDate = LocalDate.now();
-        LocalDateTime startDate = currentDate.atStartOfDay();
-        LocalDateTime endDate = currentDate.atTime(23, 59, 59, 999999999);
-        ExactPassword existToday = exactPasswordRepository.findByTimeGenerated(startDate, endDate);
+        Pair<LocalDateTime, LocalDateTime> startAndEndDate = DateHandle.getStartAndEndDate();
+        ExactPassword existToday = exactPasswordRepository.findByTimeGenerated(startAndEndDate.getFirst(), startAndEndDate.getSecond());
         if (existToday != null){
             return false;
         }
@@ -40,7 +61,7 @@ public class ExactPasswordService {
         return LocalDateTime.parse(current);
     }
 
-    public String generatePassword(){
+    private String generatePassword(){
         String [] listResult = new String[3];
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         String now = LocalDateTime.now().format(formatter);

@@ -37,3 +37,247 @@
 2025-03-30T15:29:37.674+07:00  INFO 14688 --- [Guess_It] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-30T15:29:37.677+07:00  INFO 14688 --- [Guess_It] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-03-30T15:29:37.679+07:00  INFO 14688 --- [Guess_It] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-30T20:25:22.724+07:00  INFO 16920 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Starting ItApplication v1.0.0 using Java 22.0.2 with PID 16920 (C:\Users\ADMIN\Desktop\it\target\classes started by ADMIN in C:\Users\ADMIN\Desktop\it)
+2025-03-30T20:25:22.726+07:00  INFO 16920 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : No active profile set, falling back to 1 default profile: "default"
+2025-03-30T20:25:22.767+07:00  INFO 16920 --- [Guess_It] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-30T20:25:22.768+07:00  INFO 16920 --- [Guess_It] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-30T20:25:23.352+07:00  INFO 16920 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-30T20:25:23.408+07:00  INFO 16920 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2025-03-30T20:25:23.960+07:00  INFO 16920 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-30T20:25:23.971+07:00  INFO 16920 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-30T20:25:23.972+07:00  INFO 16920 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-30T20:25:24.014+07:00  INFO 16920 --- [Guess_It] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-30T20:25:24.014+07:00  INFO 16920 --- [Guess_It] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1246 ms
+2025-03-30T20:25:24.164+07:00  INFO 16920 --- [Guess_It] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-30T20:25:24.232+07:00  INFO 16920 --- [Guess_It] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-30T20:25:24.258+07:00  INFO 16920 --- [Guess_It] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-30T20:25:24.511+07:00  INFO 16920 --- [Guess_It] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-30T20:25:24.536+07:00  INFO 16920 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-30T20:25:24.699+07:00  INFO 16920 --- [Guess_It] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@bfdcb51
+2025-03-30T20:25:24.702+07:00  INFO 16920 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-30T20:25:24.776+07:00  INFO 16920 --- [Guess_It] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-30T20:25:25.457+07:00  INFO 16920 --- [Guess_It] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-30T20:25:25.497+07:00  INFO 16920 --- [Guess_It] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T20:25:25.718+07:00  INFO 16920 --- [Guess_It] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-30T20:25:26.247+07:00  INFO 16920 --- [Guess_It] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-30T20:25:26.699+07:00  INFO 16920 --- [Guess_It] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-30T20:25:26.734+07:00  INFO 16920 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-30T20:25:26.743+07:00  INFO 16920 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Started ItApplication in 4.413 seconds (process running for 5.085)
+2025-03-30T20:26:56.944+07:00  INFO 16920 --- [Guess_It] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-30T20:26:56.945+07:00  INFO 16920 --- [Guess_It] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-30T20:26:56.947+07:00  INFO 16920 --- [Guess_It] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-30T20:28:49.068+07:00  INFO 16920 --- [Guess_It] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-30T20:28:49.072+07:00  INFO 16920 --- [Guess_It] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-30T20:28:49.155+07:00  INFO 16920 --- [Guess_It] [SpringApplicationShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2025-03-30T20:28:49.157+07:00  INFO 16920 --- [Guess_It] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T20:28:49.160+07:00  INFO 16920 --- [Guess_It] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-30T20:28:49.164+07:00  INFO 16920 --- [Guess_It] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-30T20:28:53.377+07:00  INFO 23704 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Starting ItApplication v1.0.0 using Java 22.0.2 with PID 23704 (C:\Users\ADMIN\Desktop\it\target\classes started by ADMIN in C:\Users\ADMIN\Desktop\it)
+2025-03-30T20:28:53.379+07:00  INFO 23704 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : No active profile set, falling back to 1 default profile: "default"
+2025-03-30T20:28:53.410+07:00  INFO 23704 --- [Guess_It] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-30T20:28:53.410+07:00  INFO 23704 --- [Guess_It] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-30T20:28:53.922+07:00  INFO 23704 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-30T20:28:53.970+07:00  INFO 23704 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2025-03-30T20:28:54.410+07:00  INFO 23704 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-30T20:28:54.420+07:00  INFO 23704 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-30T20:28:54.420+07:00  INFO 23704 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-30T20:28:54.447+07:00  INFO 23704 --- [Guess_It] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-30T20:28:54.447+07:00  INFO 23704 --- [Guess_It] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1037 ms
+2025-03-30T20:28:54.550+07:00  INFO 23704 --- [Guess_It] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-30T20:28:54.589+07:00  INFO 23704 --- [Guess_It] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-30T20:28:54.628+07:00  INFO 23704 --- [Guess_It] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-30T20:28:54.823+07:00  INFO 23704 --- [Guess_It] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-30T20:28:54.851+07:00  INFO 23704 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-30T20:28:54.990+07:00  INFO 23704 --- [Guess_It] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49b1d928
+2025-03-30T20:28:54.992+07:00  INFO 23704 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-30T20:28:55.042+07:00  INFO 23704 --- [Guess_It] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-30T20:28:55.715+07:00  INFO 23704 --- [Guess_It] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-30T20:28:55.745+07:00  INFO 23704 --- [Guess_It] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T20:28:55.908+07:00  INFO 23704 --- [Guess_It] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-30T20:28:56.345+07:00  INFO 23704 --- [Guess_It] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-30T20:28:56.739+07:00  INFO 23704 --- [Guess_It] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-30T20:28:56.781+07:00  INFO 23704 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-30T20:28:56.791+07:00  INFO 23704 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Started ItApplication in 3.738 seconds (process running for 4.264)
+2025-03-30T20:28:59.902+07:00  INFO 23704 --- [Guess_It] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-30T20:28:59.903+07:00  INFO 23704 --- [Guess_It] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-30T20:28:59.904+07:00  INFO 23704 --- [Guess_It] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-30T20:32:48.606+07:00  INFO 23704 --- [Guess_It] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-30T20:32:48.619+07:00  INFO 23704 --- [Guess_It] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-30T20:32:48.633+07:00  INFO 23704 --- [Guess_It] [SpringApplicationShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2025-03-30T20:32:48.635+07:00  INFO 23704 --- [Guess_It] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T20:32:48.637+07:00  INFO 23704 --- [Guess_It] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-30T20:32:48.640+07:00  INFO 23704 --- [Guess_It] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-30T20:32:52.615+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Starting ItApplication v1.0.0 using Java 22.0.2 with PID 17988 (C:\Users\ADMIN\Desktop\it\target\classes started by ADMIN in C:\Users\ADMIN\Desktop\it)
+2025-03-30T20:32:52.617+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : No active profile set, falling back to 1 default profile: "default"
+2025-03-30T20:32:52.649+07:00  INFO 17988 --- [Guess_It] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-30T20:32:52.649+07:00  INFO 17988 --- [Guess_It] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-30T20:32:53.177+07:00  INFO 17988 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-30T20:32:53.227+07:00  INFO 17988 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2025-03-30T20:32:53.738+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-30T20:32:53.766+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-30T20:32:53.767+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-30T20:32:53.803+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-30T20:32:53.803+07:00  INFO 17988 --- [Guess_It] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1154 ms
+2025-03-30T20:32:53.911+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-30T20:32:53.960+07:00  INFO 17988 --- [Guess_It] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-30T20:32:53.995+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-30T20:32:54.212+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-30T20:32:54.235+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-30T20:32:54.380+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@45f5850a
+2025-03-30T20:32:54.381+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-30T20:32:54.431+07:00  INFO 17988 --- [Guess_It] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-30T20:32:55.016+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-30T20:32:55.059+07:00  INFO 17988 --- [Guess_It] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T20:32:55.255+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-30T20:32:55.695+07:00  INFO 17988 --- [Guess_It] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-30T20:32:56.079+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-30T20:32:56.116+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-30T20:32:56.126+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Started ItApplication in 3.834 seconds (process running for 4.308)
+2025-03-30T20:32:59.309+07:00  INFO 17988 --- [Guess_It] [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-30T20:32:59.309+07:00  INFO 17988 --- [Guess_It] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-30T20:32:59.310+07:00  INFO 17988 --- [Guess_It] [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-30T20:32:59.525+07:00  WARN 17988 --- [Guess_It] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain;charset=UTF-8' is not supported]
+2025-03-30T20:35:13.734+07:00  INFO 17988 --- [Guess_It] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-30T20:35:13.738+07:00  INFO 17988 --- [Guess_It] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-30T20:35:13.747+07:00  INFO 17988 --- [Guess_It] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-30T20:35:13.769+07:00  INFO 17988 --- [Guess_It] [Thread-5] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2025-03-30T20:35:13.771+07:00  INFO 17988 --- [Guess_It] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T20:35:13.773+07:00  INFO 17988 --- [Guess_It] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-30T20:35:13.775+07:00  INFO 17988 --- [Guess_It] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-30T20:35:13.888+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Starting ItApplication v1.0.0 using Java 22.0.2 with PID 17988 (C:\Users\ADMIN\Desktop\it\target\classes started by ADMIN in C:\Users\ADMIN\Desktop\it)
+2025-03-30T20:35:13.888+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : No active profile set, falling back to 1 default profile: "default"
+2025-03-30T20:35:14.020+07:00  INFO 17988 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-30T20:35:14.032+07:00  INFO 17988 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2025-03-30T20:35:14.124+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-30T20:35:14.125+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-30T20:35:14.125+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-30T20:35:14.139+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-30T20:35:14.139+07:00  INFO 17988 --- [Guess_It] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 249 ms
+2025-03-30T20:35:14.173+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-30T20:35:14.174+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-30T20:35:14.180+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-30T20:35:14.181+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-03-30T20:35:14.221+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@357d279
+2025-03-30T20:35:14.221+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-03-30T20:35:14.228+07:00  INFO 17988 --- [Guess_It] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-30T20:35:14.295+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-30T20:35:14.305+07:00  INFO 17988 --- [Guess_It] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T20:35:14.379+07:00  INFO 17988 --- [Guess_It] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-30T20:35:14.499+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-30T20:35:14.512+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-30T20:35:14.515+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Started ItApplication in 0.654 seconds (process running for 142.697)
+2025-03-30T20:35:14.516+07:00  INFO 17988 --- [Guess_It] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-30T20:36:04.603+07:00  INFO 17988 --- [Guess_It] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-30T20:36:04.603+07:00  INFO 17988 --- [Guess_It] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-30T20:36:04.604+07:00  INFO 17988 --- [Guess_It] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-30T20:38:56.395+07:00  INFO 17988 --- [Guess_It] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-30T20:38:56.397+07:00  INFO 17988 --- [Guess_It] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-30T20:38:56.401+07:00  INFO 17988 --- [Guess_It] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-30T20:38:56.410+07:00  INFO 17988 --- [Guess_It] [Thread-7] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2025-03-30T20:38:56.416+07:00  INFO 17988 --- [Guess_It] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T20:38:56.416+07:00  INFO 17988 --- [Guess_It] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-03-30T20:38:56.423+07:00  INFO 17988 --- [Guess_It] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-03-30T20:38:56.503+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Starting ItApplication v1.0.0 using Java 22.0.2 with PID 17988 (C:\Users\ADMIN\Desktop\it\target\classes started by ADMIN in C:\Users\ADMIN\Desktop\it)
+2025-03-30T20:38:56.503+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : No active profile set, falling back to 1 default profile: "default"
+2025-03-30T20:38:56.667+07:00  INFO 17988 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-30T20:38:56.676+07:00  INFO 17988 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2025-03-30T20:38:56.742+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-30T20:38:56.742+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-30T20:38:56.742+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-30T20:38:56.752+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-30T20:38:56.753+07:00  INFO 17988 --- [Guess_It] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 247 ms
+2025-03-30T20:38:56.782+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-30T20:38:56.783+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-30T20:38:56.788+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-30T20:38:56.789+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-03-30T20:38:56.830+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@453687aa
+2025-03-30T20:38:56.831+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-03-30T20:38:56.836+07:00  INFO 17988 --- [Guess_It] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-30T20:38:56.919+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-30T20:38:56.934+07:00  INFO 17988 --- [Guess_It] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T20:38:57.010+07:00  INFO 17988 --- [Guess_It] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-30T20:38:57.159+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-30T20:38:57.182+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-30T20:38:57.185+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Started ItApplication in 0.703 seconds (process running for 365.367)
+2025-03-30T20:38:57.185+07:00  INFO 17988 --- [Guess_It] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-30T20:38:58.571+07:00  INFO 17988 --- [Guess_It] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2025-03-30T20:38:58.572+07:00  INFO 17988 --- [Guess_It] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-30T20:38:58.576+07:00  INFO 17988 --- [Guess_It] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-30T20:38:58.581+07:00  INFO 17988 --- [Guess_It] [Thread-11] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2025-03-30T20:38:58.582+07:00  INFO 17988 --- [Guess_It] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T20:38:58.582+07:00  INFO 17988 --- [Guess_It] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-03-30T20:38:58.583+07:00  INFO 17988 --- [Guess_It] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-03-30T20:38:58.720+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Starting ItApplication v1.0.0 using Java 22.0.2 with PID 17988 (C:\Users\ADMIN\Desktop\it\target\classes started by ADMIN in C:\Users\ADMIN\Desktop\it)
+2025-03-30T20:38:58.721+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : No active profile set, falling back to 1 default profile: "default"
+2025-03-30T20:38:58.840+07:00  INFO 17988 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-30T20:38:58.850+07:00  INFO 17988 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2025-03-30T20:38:58.910+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-30T20:38:58.910+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-30T20:38:58.910+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-30T20:38:58.919+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-30T20:38:58.920+07:00  INFO 17988 --- [Guess_It] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 198 ms
+2025-03-30T20:38:58.945+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-30T20:38:58.946+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-30T20:38:58.951+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-30T20:38:58.951+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-03-30T20:38:58.994+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@71751682
+2025-03-30T20:38:58.994+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-03-30T20:38:59.000+07:00  INFO 17988 --- [Guess_It] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-30T20:38:59.070+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-30T20:38:59.082+07:00  INFO 17988 --- [Guess_It] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T20:38:59.147+07:00  INFO 17988 --- [Guess_It] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-30T20:38:59.259+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-30T20:38:59.270+07:00  INFO 17988 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-30T20:38:59.272+07:00  INFO 17988 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Started ItApplication in 0.625 seconds (process running for 367.454)
+2025-03-30T20:38:59.273+07:00  INFO 17988 --- [Guess_It] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-03-30T20:39:01.746+07:00  INFO 17988 --- [Guess_It] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-30T20:39:01.747+07:00  INFO 17988 --- [Guess_It] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-30T20:39:01.748+07:00  INFO 17988 --- [Guess_It] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-30T20:40:13.419+07:00  INFO 17988 --- [Guess_It] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-30T20:40:13.427+07:00  INFO 17988 --- [Guess_It] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-30T20:40:13.434+07:00  INFO 17988 --- [Guess_It] [SpringApplicationShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2025-03-30T20:40:13.435+07:00  INFO 17988 --- [Guess_It] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T20:40:13.436+07:00  INFO 17988 --- [Guess_It] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-03-30T20:40:13.445+07:00  INFO 17988 --- [Guess_It] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.

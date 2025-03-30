@@ -10,7 +10,6 @@ import java.time.LocalDateTime;
 
 @Repository
 public interface ExactPasswordRepository extends JpaRepository<ExactPassword, Integer> {
-    ExactPassword findByPassword(String password);
     @Query("SELECT e FROM ExactPassword e WHERE e.timeGenerated BETWEEN :start AND :end")
     ExactPassword findByTimeGenerated(@Param("start") LocalDateTime start, @Param("end") LocalDateTime end);
 }

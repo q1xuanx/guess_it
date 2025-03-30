@@ -2,11 +2,14 @@ package com.guess.it.guess.service;
 
 import com.guess.it.core.dto.ApiResponse;
 import com.guess.it.core.utils.DateHandle;
+import com.guess.it.core.utils.LogHandle;
 import com.guess.it.guess.model.ExactPassword;
 import com.guess.it.guess.model.WrongGuess;
 import com.guess.it.guess.repository.ExactPasswordRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.util.Pair;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +18,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class ExactPasswordService {
@@ -26,11 +30,13 @@ public class ExactPasswordService {
         Pair<LocalDateTime, LocalDateTime> getEndAndStart = DateHandle.getStartAndEndDate();
         ExactPassword exactPassword = exactPasswordRepository.findByTimeGenerated(getEndAndStart.getFirst(), getEndAndStart.getSecond());
         if (exactPassword == null || exactPassword.isGuessed()) {
+            LogHandle.printWarningLog("guessPassword", "exact password is already guessed");
             return new ApiResponse<>(400, "Error when generate password, please try again ! \n Or password is guessed today, please try tomorrow", false);
         }
         if (exactPassword.getPassword().equals(password)) {
             exactPassword.setGuessed(true);
             exactPasswordRepository.save(exactPassword);
+            LogHandle.printWarningLog("guessPassword", "Exact password guessed at: " + LocalDateTime.now());
             return new ApiResponse<>(200, "Successfully ! your guess is correct", true);
         }
         WrongGuess wrongGuess = WrongGuess.builder()
@@ -38,6 +44,7 @@ public class ExactPasswordService {
                 .timeGuess(LocalDateTime.now())
                 .build();
         wrongGuessService.save(wrongGuess);
+        LogHandle.printInfoLog("guessPassword", "Guess wrong password at: " + LocalDateTime.now());
         return new ApiResponse<>(400, "Password not correct", false);
     }
 
@@ -46,6 +53,7 @@ public class ExactPasswordService {
         Pair<LocalDateTime, LocalDateTime> startAndEndDate = DateHandle.getStartAndEndDate();
         ExactPassword existToday = exactPasswordRepository.findByTimeGenerated(startAndEndDate.getFirst(), startAndEndDate.getSecond());
         if (existToday != null){
+            LogHandle.printWarningLog("savePassword", "exact password is already guessed || password had generated");
             return false;
         }
         ExactPassword exactPassword = ExactPassword.builder()
@@ -53,12 +61,8 @@ public class ExactPasswordService {
                 .timeGenerated(LocalDateTime.now())
                 .build();
         exactPasswordRepository.save(exactPassword);
+        LogHandle.printInfoLog("savePassword", "Exact password saved");
         return true;
-    }
-
-    private LocalDateTime getCurrentDate(){
-        String current = LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME);
-        return LocalDateTime.parse(current);
     }
 
     private String generatePassword(){

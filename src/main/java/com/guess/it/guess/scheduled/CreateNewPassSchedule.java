@@ -1,7 +1,9 @@
 package com.guess.it.guess.scheduled;
 
 
+import com.guess.it.core.utils.LogHandle;
 import com.guess.it.guess.service.ExactPasswordService;
+import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
@@ -21,11 +23,21 @@ public class CreateNewPassSchedule {
     public void createNewPassword() {
         boolean saved = exactPasswordService.savePassword();
         if (saved) {
-            log.info("New password created at {}", LocalDateTime.now());
+            LogHandle.printInfoLog("init", "Password generated successfully");
         }else {
-            log.warn("Today password is have created {}", LocalDateTime.now());
+            LogHandle.printWarningLog("init", "Password had generated, not generated password");
         }
     }
-
+    @PostConstruct
+    public void init() {
+        LogHandle.printInfoLog("init", "Application start");
+        LogHandle.printInfoLog("init", "Start Gen Password at the first time");
+        boolean saved = exactPasswordService.savePassword();
+        if (saved) {
+            LogHandle.printInfoLog("init", "Password generated successfully");
+        }else {
+            LogHandle.printWarningLog("init", "Password had generated, not generated password");
+        }
+    }
 }
 

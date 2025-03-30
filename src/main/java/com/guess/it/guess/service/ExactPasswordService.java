@@ -2,6 +2,7 @@ package com.guess.it.guess.service;
 
 import com.guess.it.core.dto.ApiResponse;
 import com.guess.it.core.utils.DateHandle;
+import com.guess.it.core.utils.LogHandle;
 import com.guess.it.guess.model.ExactPassword;
 import com.guess.it.guess.model.WrongGuess;
 import com.guess.it.guess.repository.ExactPasswordRepository;
@@ -26,11 +27,13 @@ public class ExactPasswordService {
         Pair<LocalDateTime, LocalDateTime> getEndAndStart = DateHandle.getStartAndEndDate();
         ExactPassword exactPassword = exactPasswordRepository.findByTimeGenerated(getEndAndStart.getFirst(), getEndAndStart.getSecond());
         if (exactPassword == null || exactPassword.isGuessed()) {
+            LogHandle.printInfoLog("/guessPassword", "Password is already guessed!");
             return new ApiResponse<>(400, "Error when generate password, please try again ! \n Or password is guessed today, please try tomorrow", false);
         }
         if (exactPassword.getPassword().equals(password)) {
             exactPassword.setGuessed(true);
             exactPasswordRepository.save(exactPassword);
+            LogHandle.printInfoLog("/guessPassword", "Password guessed successfully");
             return new ApiResponse<>(200, "Successfully ! your guess is correct", true);
         }
         WrongGuess wrongGuess = WrongGuess.builder()
@@ -38,6 +41,7 @@ public class ExactPasswordService {
                 .timeGuess(LocalDateTime.now())
                 .build();
         wrongGuessService.save(wrongGuess);
+        LogHandle.printInfoLog("/guessPassword", "Password guessed wrong");
         return new ApiResponse<>(400, "Password not correct", false);
     }
 
@@ -52,6 +56,7 @@ public class ExactPasswordService {
                 .password(generatePassword())
                 .timeGenerated(LocalDateTime.now())
                 .build();
+        LogHandle.printInfoLog("savePassword", "Password generated successfully");
         exactPasswordRepository.save(exactPassword);
         return true;
     }

@@ -1,0 +1,39 @@
+2025-03-30T15:29:04.337+07:00  INFO 14688 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Starting ItApplication v1.0.0 using Java 22.0.2 with PID 14688 (C:\Users\ADMIN\Desktop\it\target\classes started by ADMIN in C:\Users\ADMIN\Desktop\it)
+2025-03-30T15:29:04.339+07:00  INFO 14688 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : No active profile set, falling back to 1 default profile: "default"
+2025-03-30T15:29:04.371+07:00  INFO 14688 --- [Guess_It] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-30T15:29:04.374+07:00  INFO 14688 --- [Guess_It] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-30T15:29:04.835+07:00  INFO 14688 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-30T15:29:04.875+07:00  INFO 14688 --- [Guess_It] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2025-03-30T15:29:05.302+07:00  INFO 14688 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-30T15:29:05.311+07:00  INFO 14688 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-30T15:29:05.311+07:00  INFO 14688 --- [Guess_It] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-03-30T15:29:05.344+07:00  INFO 14688 --- [Guess_It] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-30T15:29:05.344+07:00  INFO 14688 --- [Guess_It] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 970 ms
+2025-03-30T15:29:05.454+07:00  INFO 14688 --- [Guess_It] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-30T15:29:05.487+07:00  INFO 14688 --- [Guess_It] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-03-30T15:29:05.513+07:00  INFO 14688 --- [Guess_It] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-30T15:29:05.702+07:00  INFO 14688 --- [Guess_It] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-30T15:29:05.723+07:00  INFO 14688 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-30T15:29:05.849+07:00  INFO 14688 --- [Guess_It] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@41fb528d
+2025-03-30T15:29:05.851+07:00  INFO 14688 --- [Guess_It] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-30T15:29:05.905+07:00  INFO 14688 --- [Guess_It] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-30T15:29:06.496+07:00  INFO 14688 --- [Guess_It] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-30T15:29:06.530+07:00  INFO 14688 --- [Guess_It] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T15:29:06.739+07:00  INFO 14688 --- [Guess_It] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-30T15:29:07.122+07:00  INFO 14688 --- [Guess_It] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-30T15:29:07.504+07:00  INFO 14688 --- [Guess_It] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-30T15:29:07.546+07:00  INFO 14688 --- [Guess_It] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-30T15:29:07.555+07:00  INFO 14688 --- [Guess_It] [restartedMain] com.guess.it.ItApplication               : Started ItApplication in 3.541 seconds (process running for 3.989)
+2025-03-30T15:29:37.608+07:00  INFO 14688 --- [Guess_It] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-30T15:29:37.614+07:00  INFO 14688 --- [Guess_It] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-30T15:29:37.671+07:00  INFO 14688 --- [Guess_It] [SpringApplicationShutdownHook] .s.m.e.c.DefaultEventPublicationRegistry : No publications outstanding!
+2025-03-30T15:29:37.674+07:00  INFO 14688 --- [Guess_It] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-30T15:29:37.677+07:00  INFO 14688 --- [Guess_It] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-30T15:29:37.679+07:00  INFO 14688 --- [Guess_It] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

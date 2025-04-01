@@ -2,19 +2,17 @@ package com.guess.it.leaderboard.controller;
 
 import com.guess.it.core.dto.ApiResponse;
 import com.guess.it.leaderboard.dto.NameUserRequest;
-import com.guess.it.leaderboard.model.LeaderBoard;
 import com.guess.it.leaderboard.service.LeaderBoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
-import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+
 
 import java.util.Map;
 

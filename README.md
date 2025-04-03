@@ -27,9 +27,7 @@ A fun and competitive project where each day, a new password is randomly generat
 ## 📦 API Features
 
 - `POST /guess` – Submit a password guess
-- `GET /leaderboard` – View today's realtime leaderboard
-- `GET /status` – Check if today’s password has been guessed
-
+- `GET /leaderboard?currentPage=1&pageSize=10` – View today's realtime leaderboard
 ---
 
 ## 🚀 Getting Started
@@ -43,6 +41,8 @@ A fun and competitive project where each day, a new password is randomly generat
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/daily-password-game.git
-cd daily-password-game
+git clone https://github.com/q1xuanx/guesst_it.git
+cd guess_it
 ./mvnw spring-boot:run
+``` 
+### -> Created by the Guess It Team 

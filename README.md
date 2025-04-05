@@ -7,7 +7,7 @@ A fun and competitive project where each day, a new password is randomly generat
 ## 🧠 How It Works
 
 - Every day, a unique password is generated using the current date + 2 special characters.  
-  Example (for March 31, 2025): `31032025@#`
+  Example (for March 31, 2025): `31/03/2025@#`
 - Users can submit guesses via the API.
 - The **first correct guesser** is recorded on the **realtime leaderboard**.
 - Once the password is guessed, further attempts are disabled for the day.

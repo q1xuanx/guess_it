@@ -28,6 +28,7 @@ A fun and competitive project where each day, a new password is randomly generat
 
 - `POST /guess` – Submit a password guess
 - `GET /leaderboard?currentPage=1&pageSize=10` – View today's realtime leaderboard
+- `GET /wrongguesses?currentPage=1&pageSize=5` – View wrong guess of a day
 ---
 
 ## 🚀 Getting Started

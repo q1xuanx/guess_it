@@ -21,7 +21,7 @@ A fun and competitive project where each day, a new password is randomly generat
 - **WebSocket** – Realtime leaderboard updates
 - **PostgreSQL** – Persistent storage for guesses and user rankings
 - **Slf4j** – Logging system for tracking API activity and errors
-
+- **Docker** - Build image for deploy api
 ---
 
 ## 📦 API Features

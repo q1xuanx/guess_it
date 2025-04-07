@@ -11,7 +11,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.util.Pair;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Random;
@@ -59,11 +58,6 @@ public class ExactPasswordService {
         LogHandle.printInfoLog("savePassword", "Password generated successfully");
         exactPasswordRepository.save(exactPassword);
         return true;
-    }
-
-    private LocalDateTime getCurrentDate(){
-        String current = LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME);
-        return LocalDateTime.parse(current);
     }
 
     private String generatePassword(){

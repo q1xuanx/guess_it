@@ -2,11 +2,9 @@ package com.guess.it.leaderboard.dto;
 
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 public class NameUserRequest {
     private String nameUser;

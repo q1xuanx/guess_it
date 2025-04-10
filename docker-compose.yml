@@ -1,0 +1,19 @@
+version: "1.0"
+
+services:
+  zipkin:
+    image: openzipkin/zipkin
+    build: .
+    ports:
+      - 9411:9411
+    restart: on-failure
+  postgre:
+    image: postgres
+    build: .
+    ports:
+      - 5432:5432
+    restart: on-failure
+    env_file:
+      - .env
+
+

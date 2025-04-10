@@ -16,12 +16,12 @@ A fun and competitive project where each day, a new password is randomly generat
 ---
 
 ## 🛠️ Tech Stack
-
 - **Java Spring Boot** – Backend API and core logic
 - **WebSocket** – Realtime leaderboard updates
 - **PostgreSQL** – Persistent storage for guesses and user rankings
 - **Slf4j** – Logging system for tracking API activity and errors
-- **Docker** - Build image for deploy api
+- **Docker/Docker-Compose** - Build image for deploy api / run Zipkin image
+- **Zipkin** - For trace service run time
 ---
 
 ## 📦 API Features
@@ -44,6 +44,6 @@ A fun and competitive project where each day, a new password is randomly generat
 ```bash
 git clone https://github.com/q1xuanx/guesst_it.git
 cd guess_it
-./mvnw spring-boot:run
+./mvnw spring-boot:run or docker run -p 8080:8080 guess-it:v001 (If builder docker)
 ``` 
 ### -> Created by the Guess It Team 
